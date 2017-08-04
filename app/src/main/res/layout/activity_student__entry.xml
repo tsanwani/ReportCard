@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/entry"
+    tools:context="com.example.codetribe.reportcard.Student_Entry">
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:id="@+id/Heading"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#9370DB"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WELCOME TO REPORT"
+            android:textSize="42sp"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textColor="#FFA500"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CENTER"
+            android:textSize="36sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:id="@+id/Group_Linear"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Heading">
+
+        <LinearLayout
+            android:id="@+id/Left"
+            android:orientation="vertical"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="33sp"
+                    android:textColor="#FFFAFA"/>
+
+            <TextView
+                android:layout_marginTop="23dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Surname"
+                android:textSize="33sp"
+                android:textColor="#FFFAFA"/>
+            <TextView
+                android:layout_marginTop="23dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Student ID"
+                android:textSize="33sp"
+                android:textColor="#FFFAFA"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/Right"
+            android:orientation="vertical"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+
+               <EditText
+                   android:id="@+id/Name_Input_"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="Enter Full Name"
+                   android:textSize="28sp"
+                   android:layout_marginRight="20dp" />
+            <EditText
+                android:id="@+id/Surname_Input_"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Surname"
+                android:textSize="28sp"
+                android:layout_marginRight="20dp"/>
+
+            <EditText
+                android:inputType="numberDecimal"
+                android:id="@+id/Marks_Two_"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Student ID"
+                android:textSize="28sp"
+                android:layout_marginRight="150dp"
+                android:textColor="#6B8E23"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/Marks_group_One"
+        android:orientation="horizontal"
+        android:layout_below="@id/Group_Linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="First Subject"
+                android:textSize="33sp"
+                android:textColor="#FFFAFA"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/Subject_One_"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Subject"
+                android:textSize="28sp"
+                android:layout_marginRight="80dp"
+                android:text="JAVA"/>
+
+            <EditText
+                android:id="@+id/Marks_One_"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Marks"
+                android:inputType="numberDecimal"
+                android:textSize="28sp"
+                android:layout_marginRight="200dp"
+                android:textColor="#6B8E23"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/Marks_group_Two"
+        android:orientation="horizontal"
+        android:layout_below="@id/Marks_group_One"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Second Subject"
+                android:textSize="33sp"
+                android:textColor="#FFF"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/Subject_Two_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="8dp"
+                android:hint="Enter Subject"
+                android:textSize="28sp"
+                android:text="SQL DATABASE"/>
+
+            <EditText
+                android:id="@+id/Marks_Three_"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Marks"
+                android:inputType="numberDecimal"
+                android:textSize="28sp"
+                android:layout_marginRight="200dp"
+                android:textColor="#6B8E23"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/Marks_group_Three"
+        android:orientation="horizontal"
+        android:layout_below="@id/Marks_group_Two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Third Subject"
+                android:textSize="33sp"
+                android:textColor="#FFFAFA"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/Subject_Three_"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Subject"
+                android:textSize="28sp"
+                android:layout_marginRight="80dp"
+                android:text="MATERIAL DSN"/>
+            <EditText
+                android:id="@+id/Student_ID_Input_"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Marks"
+                android:inputType="numberDecimal"
+                android:textSize="28sp"
+                android:layout_marginRight="200dp"
+                android:textColor="#6B8E23"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/Marks_group_Three"
+        android:id="@+id/Display_Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="309dp"
+            android:id="@+id/Id_Display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="29sp"
+            android:textColor="#00FF00"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/button_First"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/Display_Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@android:style/Widget.Button.Toggle"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="ADD"
+            android:textSize="18dp"
+            android:onClick="newProduct"/>
+
+        <Button
+            style="@android:style/Widget.Button.Toggle"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="DELETE"
+            android:textSize="18dp"
+            android:onClick="removeProduct"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_below="@id/button_First"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@android:style/Widget.Button.Toggle"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="UPDATE"
+            android:textSize="18dp"
+            android:onClick="update"/>
+
+        <Button
+            style="@android:style/Widget.Button.Toggle"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="SEARCH"
+            android:textSize="18dp"
+            android:onClick="lookupStutent"/>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+
+
